@@ -1,0 +1,110 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Alkatra', cursive;
+}
+
+.slider {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.slide {
+    position: relative;
+    display: none;
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+    transition: 0.8s ease;
+    animation: opacidade 0.5s;
+}
+
+.slide::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slide .nome-da-moto {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    color: #A1A3B4;
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 0;
+}
+
+.botoes .botao {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-color: #fff;
+}
+
+.botoes .botao.selecionado {
+    background-color: #666566;
+}
+
+.midnight {
+    background-image: url(../imagens/imagem-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.midnight {
+    background-image: url(../imagens/imagem-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.fat-boy {
+    background-image: url(../imagens/imagem-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.road-king {
+    background-image: url(../imagens/imagem-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.street-glide {
+    background-image: url(../imagens/imagem-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mostrar {
+    display: block;
+}
+
+@keyframes opacidade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
